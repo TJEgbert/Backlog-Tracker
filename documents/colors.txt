@@ -1,0 +1,2 @@
+Primary color: 02C4EE
+No color: EE2D02
