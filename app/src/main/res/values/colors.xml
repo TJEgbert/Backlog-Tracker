@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_background">#DBDBDB</color>
+    <color name="primary_light_color">#02C4EE</color>
+    <color name="no_color">#EE2D02</color>
+    <color name="display_font_color">#404040</color>
+</resources>

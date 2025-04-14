@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FilterGames">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/filter_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:translationY="-30dp">
+
+            <TextView
+                style="@style/FragmentTitle"
+                android:text="@string/filter_games"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        style="@style/FieldHeader"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="0dp"
+        android:text="@string/filter_on"/>
+
+    <Spinner
+        android:id="@+id/filter_on"
+        android:layout_margin="5dp"
+        style="@style/SpinnerTheme"/>
+
+    <TextView
+        style="@style/FieldHeader"
+        android:paddingTop="5dp"
+        android:paddingBottom="0dp"
+        android:text="@string/filter_by"/>
+
+    <Spinner
+        android:id="@+id/filter_by"
+        android:layout_margin="5dp"
+        style="@style/SpinnerTheme"/>
+
+    <Button
+        style="@style/RoundButtons"
+        android:id="@+id/filter_confirm"
+        android:text="@string/filter"/>
+
+</LinearLayout>

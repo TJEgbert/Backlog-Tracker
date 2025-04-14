@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/new_game_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:translationY="-25dp"
+            app:titleTextColor="@color/black">
+            <TextView
+                style="@style/FragmentTitle"
+                android:text="@string/new_game"
+                android:translationY="-3dp"
+                android:id="@+id/manual_create_title" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_title"
+                    android:layout_width="wrap_content"
+                    android:minWidth="400dp"
+                    android:maxWidth="500dp"
+                    android:layout_height="60dp"
+                    android:hint="@string/title"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:minWidth="400dp"
+                    android:maxWidth="500dp"
+                    android:layout_height="60dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/new_developer"
+                    android:hint="@string/developer"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:minWidth="400dp"
+                    android:maxWidth="500dp"
+                    android:textSize="25sp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/new_publisher"
+                    android:hint="@string/publisher"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:minWidth="400dp"
+                    android:maxWidth="500dp"
+                    android:textSize="25sp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/new_platform"
+                    android:hint="@string/platform"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:minWidth="400dp"
+                    android:maxWidth="500dp"
+                    android:layout_height="60dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/new_genres"
+                    android:hint="@string/generes"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/FieldHeader"
+                android:paddingTop="5dp"
+                android:paddingBottom="0dp"
+                android:text="@string/format"/>
+
+            <Spinner
+                android:id="@+id/new_format"
+                style="@style/SpinnerTheme"/>
+
+            <TextView
+                style="@style/FieldHeader"
+                android:text="@string/rating"/>
+            <Spinner
+                android:id="@+id/new_rating"
+                style="@style/SpinnerTheme"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

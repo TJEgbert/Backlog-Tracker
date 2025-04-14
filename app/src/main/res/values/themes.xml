@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BacklogTracker" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary_light_color</item>
+        <item name="colorSecondary">@color/primary_light_color</item>
+        <item name="toolbarStyle">@style/AppTheme.Toolbar</item>
+    </style>
+    <style name="Theme.BacklogTracker" parent="Base.Theme.BacklogTracker" />
+
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:translateY">-20000</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Base.Theme.BacklogTracker">
+        <item name="android:background">@drawable/spinner_style</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="RoundButtons">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RedRoundButtons">
+        <item name="android:background">@drawable/red_rounded_button</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FieldHeader">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetailFont">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/display_font_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FragmentTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

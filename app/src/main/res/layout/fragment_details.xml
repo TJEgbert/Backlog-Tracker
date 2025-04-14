@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/cardview_light_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:translationY="-30dp">
+
+            <TextView
+                style="@style/FragmentTitle"
+                android:text="@string/game_details"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/title"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_title"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/developer"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_developer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/publisher"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_publisher"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/platform"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_platform"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/generes"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_genres"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/format"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_format"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    style="@style/FieldHeader"
+                    android:text="@string/rating"/>
+
+                <TextView
+                    style="@style/DetailFont"
+                    android:id="@+id/detail_rating"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

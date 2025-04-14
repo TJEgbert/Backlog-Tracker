@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/mainActivityFragment">
+
+    <fragment
+        android:id="@+id/mainActivityFragment"
+        android:name="com.example.backlogtracker.MainActivityFragment"
+        android:label="MainActivityFragment" >
+        <action
+            android:id="@+id/action_mainActivityFragment_to_manualCreateFragment"
+            app:destination="@id/manualCreateFragment" />
+        <action
+            android:id="@+id/action_mainActivityFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_mainActivityFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainActivityFragment_to_filterRankFragment"
+            app:destination="@id/filterRankFragment" />
+        <action
+            android:id="@+id/action_mainActivityFragment_to_filterGames"
+            app:destination="@id/filterGames" />
+    </fragment>
+    <fragment
+        android:id="@+id/manualCreateFragment"
+        android:name="com.example.backlogtracker.ManualCreateFragment"
+        android:label="ManualCreateFragment" >
+        <action
+            android:id="@+id/action_manualCreateFragment_to_mainActivityFragment"
+            app:destination="@id/mainActivityFragment" />
+        <argument
+            android:name="game_id"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <argument
+            android:name="filterOn"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="filterBy"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_manualCreateFragment_to_filterRankFragment"
+            app:destination="@id/filterRankFragment" />
+        <argument
+            android:name="fType"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.backlogtracker.DetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/action_detailsFragment_to_manualCreateFragment"
+            app:destination="@id/manualCreateFragment" />
+        <action
+            android:id="@+id/action_detailsFragment_to_mainActivityFragment"
+            app:destination="@id/mainActivityFragment" />
+        <argument
+            android:name="game_id"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <action
+            android:id="@+id/action_detailsFragment_to_filterRankFragment"
+            app:destination="@id/filterRankFragment" />
+        <argument
+            android:name="filterOn"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="filterBy"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="fType"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.backlogtracker.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_mainActivityFragment"
+            app:destination="@id/mainActivityFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_searchCreateFragment"
+            app:destination="@id/searchCreateFragment" />
+        <argument
+            android:name="searchingTitle"
+            app:argType="string"
+            android:defaultValue=""/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchCreateFragment"
+        android:name="com.example.backlogtracker.SearchCreateFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchCreateFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_searchCreateFragment_to_mainActivityFragment"
+            app:destination="@id/mainActivityFragment" />
+        <argument
+            android:name="guid"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="searchTitle"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterGames"
+        android:name="com.example.backlogtracker.FilterGames"
+        android:label="fragment_filter_games"
+        tools:layout="@layout/fragment_filter_games" >
+        <action
+            android:id="@+id/action_filterGames_to_filterRankFragment"
+            app:destination="@id/filterRankFragment" />
+        <action
+            android:id="@+id/action_filterGames_to_mainActivityFragment"
+            app:destination="@id/mainActivityFragment" />
+        <argument
+            android:name="filterOn"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="filterBy"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterRankFragment"
+        android:name="com.example.backlogtracker.FilterRankFragment"
+        android:label="fragment_filter_rank"
+        tools:layout="@layout/fragment_filter_rank" >
+        <action
+            android:id="@+id/action_filterRankFragment_to_mainActivityFragment"
+            app:destination="@id/mainActivityFragment" />
+        <action
+            android:id="@+id/action_filterRankFragment_to_filterGames"
+            app:destination="@id/filterGames" />
+        <argument
+            android:name="filterOn"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="filterBy"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_filterRankFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+</navigation>

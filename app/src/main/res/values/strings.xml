@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">BacklogTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="rating">Rating</string>
+    <string name="format">Format</string>
+    <string name="generes">Genres</string>
+    <string name="platform">Platform</string>
+    <string name="publisher">Publisher</string>
+    <string name="developer">Developer</string>
+    <string name="search">Search</string>
+    <string name="manual">Manual</string>
+    <string name="card_rating">Rating:\u0020</string>
+    <string name="list_of_personal_game_collection">List of personal game collection</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="order_by_rank">Order By Rating</string>
+    <string name="filter">Filter</string>
+    <string name="filter_by">Filter By</string>
+    <string name="filter_on">Filter On</string>
+    <string name="your_collection">Your Collection</string>
+    <string name="filter_games">Filter Games</string>
+    <string name="add_game">Add Game</string>
+    <string name="game_details">Game Details</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="delete_dialog_message">This will permanently delete this entry.</string>
+    <string name="delete_this_entry">Delete this entry?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="filter_results">Filter Results</string>
+    <string name="new_game">New Game</string>
+    <string name="game_title">Game Title</string>
+    <string name="edit_game">Edit Game</string>
+    <string name="loading">Loading...</string>
+    <string name="no_results">No results found</string>
+
+    <string-array name="formats_array">
+        <item>Digital</item>
+        <item>Physical</item>
+    </string-array>
+    <string-array name="rating_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="filter_by_array">
+        <item>Developer</item>
+        <item>Publisher</item>
+        <item>Platform</item>
+        <item>Genre</item>
+        <item>Format</item>
+        <item>Rating</item>
+    </string-array>
+
+    <string-array name="genre_array">
+        <item>Action</item>
+        <item>Strategy</item>
+        <item>Sports</item>
+        <item>Adventure</item>
+        <item>Role-Playing</item>
+        <item>Driving/Racing</item>
+        <item>Simulation</item>
+        <item>Educational</item>
+        <item>Fighting</item>
+        <item>Wrestling</item>
+        <item>Shooter</item>
+        <item>Real-Time Strategy</item>
+        <item>Card Game</item>
+        <item>Trivia/Board Game</item>
+        <item>Compilation</item>
+        <item>MMORPG</item>
+        <item>Minigame Collection</item>
+        <item>Puzzle</item>
+        <item>Music/Rhythm</item>
+        <item>Boxing</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Skateboarding</item>
+        <item>Flight Simulator</item>
+        <item>Tennis</item>
+        <item>Billiards</item>
+        <item>Fishing</item>
+        <item>Golf</item>
+        <item>Bowling</item>
+        <item>Pinball</item>
+        <item>Dual-Joystick Shooter</item>
+        <item>First-Person Shooter</item>
+        <item>Snowboarding/Skiing</item>
+        <item>Baseball</item>
+        <item>Light-Gun Shooter</item>
+        <item>Text Adventure</item>
+        <item>Brawler</item>
+        <item>Vehicular Combat</item>
+        <item>Hockey</item>
+        <item>Soccer</item>
+        <item>Platformer</item>
+        <item>Action-Adventure</item>
+        <item>Track &amp; Field</item>
+        <item>Action-Adventure</item>
+        <item>Fitness</item>
+        <item>Block-Breaking</item>
+        <item>Cricket</item>
+        <item>Surfing</item>
+        <item>Shoot \'Em Up</item>
+        <item>Gambling</item>
+        <item>MOBA</item>
+
+    </string-array>
+</resources>
